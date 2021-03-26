@@ -1,33 +1,37 @@
 <html>
     <style>
-        .left #fish{
+        .on #fish{
             left:2%!important;
         }
 
-        .left #worm {
+        .on #worm {
             top: 5%!important;
         }
 
-        .left #line {
+        .on #line {
             height: 6%!important;
+        }
+
+        .on #text-fish {
+            opacity: 0!important;
         }
     </style>
     <body style="background-color: rgb(40, 137, 194);" >
 		
             <img id="fish" src="https://medias.pylones.com/img/p/7/3/0/730-large_default.jpg" 
-             width="200" style="transition: all 5s; position: absolute; left: 80%; top:40%" onclick="document.body.classList.add('left')"/>
+             width="200" style="transition: all 5s; position: absolute; left: 80%; top:40%" onclick="document.body.classList.add('on')"/>
 
 
              <img id="worm" src="https://image.spreadshirtmedia.net/image-server/v1/mp/designs/143898756,width=178,height=178/angeln-haken-wurm-fischen-geschenk-lustig-fisch.png"
                     
                 style="position: absolute; left: 5px; top: 40%; transition: all 5s;"
-                onclick="document.body.classList.remove('left')"
+                onclick="document.body.classList.remove('on')"
              />
 
              <div id="line" style="position:absolute; border-left: 1px solid #000; left: 100px; top: 0; height: 41%; width: 10px;  transition: all 5s;"></div>
 
 
-             <div id="text-fish" style="position: absolute;left: 80%; top:40%;   padding-top: 20px; font-size: 30px; font-weight: bold; text-align: center; color: rgb(230, 216, 15);">Hey Wurm!!!</div>
+             <div id="text-fish" style="position: absolute;left: 76%; top:35%;  padding-top: 20px; font-size: 50px; font-weight: bold; text-align: center; color: rgb(230, 216, 15); transition: all 5s; opacity: 1;"><nobr>Hey Wurm!!!</nobr></div>
 
     </body>
 </html>
